@@ -57,6 +57,9 @@ public class CalculatorController {
         if (num1 == null || num2 == null) {
             return "один (оба) из параметров не определён(ы).";
         }
+        if (num2 == 0) {
+            return "Деление на 0 невозможно.";
+        }
         return calculatorService.divide(num1, num2);
     }
 }

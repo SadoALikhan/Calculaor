@@ -24,9 +24,6 @@ public class CalculatorServiceImpl implements CalculatorService {
     }
 
     public String divide(double num1, double num2) {
-        if (num2 == 0) {
-            return "Деление на 0 невозможно.";
-        }
         return num1 + " / " + num2 + " = " + (num1 / num2);
     }
 }
