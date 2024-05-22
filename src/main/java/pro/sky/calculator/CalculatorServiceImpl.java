@@ -10,4 +10,23 @@ public class CalculatorServiceImpl implements CalculatorService {
     public String answerHello() {
         return "<b>Добро пожаловать в калькулятор</b>";
     }
+
+    public String plus(double num1, double num2) {
+        return num1 + " + " + num2 + " = " + (num1 + num2);
+    }
+
+    public String minus(double num1, double num2) {
+        return num1 + " - " + num2 + " = " + (num1 - num2);
+    }
+
+    public String multiply(double num1, double num2) {
+        return num1 + " * " + num2 + " = " + (num1 * num2);
+    }
+
+    public String divide(double num1, double num2) {
+        if (num2 == 0) {
+            return "Деление на 0 невозможно.";
+        }
+        return num1 + " / " + num2 + " = " + (num1 / num2);
+    }
 }
