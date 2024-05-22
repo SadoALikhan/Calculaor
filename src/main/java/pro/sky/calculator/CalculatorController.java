@@ -28,7 +28,7 @@ public class CalculatorController {
     public String plus(@RequestParam(value = "num1", required = false) Integer num1,
                        @RequestParam(value = "num2", required = false) Integer num2) {
         if (num1 == null || num2 == null) {
-            return "один (оба) из параметров не определён(ы)";
+            return "один (оба) из параметров не определён(ы).";
         }
         return calculatorService.plus(num1, num2);
     }
@@ -37,7 +37,7 @@ public class CalculatorController {
     public String minus(@RequestParam(value = "num1", required = false) Integer num1,
                         @RequestParam(value = "num2", required = false) Integer num2) {
         if (num1 == null || num2 == null) {
-            return "один (оба) из параметров не определён(ы)";
+            return "один (оба) из параметров не определён(ы).";
         }
         return calculatorService.minus(num1, num2);
     }
@@ -46,7 +46,7 @@ public class CalculatorController {
     public String multiply(@RequestParam(value = "num1", required = false) Integer num1,
                            @RequestParam(value = "num2", required = false) Integer num2) {
         if (num1 == null || num2 == null) {
-            return "один (оба) из параметров не определён(ы)";
+            return "один (оба) из параметров не определён(ы).";
         }
         return calculatorService.multiply(num1, num2);
     }
@@ -55,7 +55,7 @@ public class CalculatorController {
     public String divide(@RequestParam(value = "num1", required = false) Integer num1,
                          @RequestParam(value = "num2", required = false) Integer num2) {
         if (num1 == null || num2 == null) {
-            return "один (оба) из параметров не определён(ы)";
+            return "один (оба) из параметров не определён(ы).";
         }
         return calculatorService.divide(num1, num2);
     }
