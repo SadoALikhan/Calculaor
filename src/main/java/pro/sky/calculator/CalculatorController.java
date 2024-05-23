@@ -30,7 +30,7 @@ public class CalculatorController {
         if (num1 == null || num2 == null) {
             return "один (оба) из параметров не определён(ы).";
         }
-        return calculatorService.plus(num1, num2);
+        return num1 + " + " + num2 + " = " + calculatorService.plus(num1, num2);
     }
 
     @GetMapping(path = "/minus")
@@ -39,7 +39,7 @@ public class CalculatorController {
         if (num1 == null || num2 == null) {
             return "один (оба) из параметров не определён(ы).";
         }
-        return calculatorService.minus(num1, num2);
+        return num1 + " - " + num2 + " = " + calculatorService.minus(num1, num2);
     }
 
     @GetMapping(path = "/multiply")
@@ -48,7 +48,7 @@ public class CalculatorController {
         if (num1 == null || num2 == null) {
             return "один (оба) из параметров не определён(ы).";
         }
-        return calculatorService.multiply(num1, num2);
+        return num1 + " * " + num2 + " = " + calculatorService.multiply(num1, num2);
     }
 
     @GetMapping(path = "/divide")
@@ -60,6 +60,6 @@ public class CalculatorController {
         if (num2 == 0) {
             return "Деление на 0 невозможно.";
         }
-        return calculatorService.divide(num1, num2);
+        return num1 + " / " + num2 + " = " + calculatorService.divide(num1, num2);
     }
 }
